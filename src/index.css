@@ -1,13 +1,121 @@
-body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  /* font-size: 62.5%; */
+}
+
+.container {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  margin-bottom: 60px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__nav li,
+.header__nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header__logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.header__profile {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.header__profile a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.349);
+}
+
+.form label {
+  margin: 20px 0 5px;
+}
+
+.form button {
+  align-self: center;
+  text-align: center;
+  width: 80px;
+  padding: 7px 10px;
+  margin-top: 30px;
+  border: none;
+  background-color: rgb(49, 62, 247);
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.199);
+  transition: all 0.2s;
+}
+
+.form button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.336);
+  transform: translateY(-2px);
+}
+
+.form input {
+  border: none;
+  padding: 5px 0;
+  border-bottom: 1px rgba(119, 119, 119, 0.514) solid;
+  transition: all 0.2s;
+}
+
+.form input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(49, 62, 247);
+}
+
+.form__title {
+  text-align: center;
+  font-size: 28px;
 }
